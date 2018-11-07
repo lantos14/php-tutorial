@@ -1,0 +1,30 @@
+body {
+  background-image: url('http://papers.co/wallpaper/papers.co-mb14-wallpaper-fire-stars-space-35-3840x2160-4k-wallpaper.jpg');
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 24%;
+  font-size: 20px;
+}
+
+div {
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+
+img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  margin: 6px;
+}
