@@ -22,7 +22,7 @@ class Database {
 
   public function rows() {
     $rows = array();
-    for ($i = 0; i < $this->_numRows; $i++) {
+    for ($i = 0; $i < $this->_numRows; $i++) {
       $rows[] = mysqli_fetch_assoc($this->_result);
     }
     return $rows;
