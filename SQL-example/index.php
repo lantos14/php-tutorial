@@ -8,23 +8,9 @@
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
-  <?php
-  require_once "database.php";
-  require_once "tablemaker.php";
-  
-  $db = new Database('localhost', 'root', '', 'world');
-  $db->query(
-    "SELECT country.Code, country.Name, city.Name AS Capital 
-    FROM country 
-    INNER JOIN city ON country.Capital = city.ID
-    ORDER BY RAND()
-    LIMIT 10;");
-  $endResult = $db->_result;
-  
-  $values = $endResult->fetch_all(MYSQLI_ASSOC);
 
-  renderTable($db->rows(), $values);
-  $db->disconnect();
-  ?>
+
+  <a href="quiz/quiz.php">Get Questions</a>
+
 </body>
 </html>

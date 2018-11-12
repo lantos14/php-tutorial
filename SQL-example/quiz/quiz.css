@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+#quiz-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#question-text {
+  min-height: 50px;
+  text-align: center;
+  padding: 20px 200px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.answer {
+  display: block;
+  background-color: lightsteelblue;
+  padding: 10px 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.answer:hover {
+  filter: brightness(110%); 
+}
+
+.answer:active {
+  filter: brightness(90%);
+}
