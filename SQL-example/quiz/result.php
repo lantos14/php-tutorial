@@ -26,9 +26,9 @@
 
   <?php
   if ($values[0]['Capital'] === $quess) {
-    echo '<p id="result"> Right Answer </p>';
+    echo '<p id="result" style="color:green"> Right Answer </p>';
   } else {
-    echo '<p id="result"> Wrong Answer </p>';
+    echo '<p id="result" style="color:red"> Wrong Answer </p>';
   }
   ?>
 
