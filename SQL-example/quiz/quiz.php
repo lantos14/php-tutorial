@@ -8,9 +8,20 @@
   <link rel="stylesheet" type="text/css" media="screen" href="./quiz.css" />
 </head>
 <body>
+
   <?php
   require_once "../db/database.php";
   require_once "../db/queries.php";
+
+  session_start();
+
+  if (!isset($_SESSION['score'])) {
+    $_SESSION['score'] = 0;
+  } else {
+    if ($_GET["correct"]) {
+      $_SESSION['score']++;
+    }
+  }
 
   if (isset($_GET["quess"])) {
     $quess = $_GET["quess"];
@@ -26,10 +37,15 @@
   ?>
 
   <div id="quiz-body">
+    <div class="counter">
+      <p>User: test</p>
+      <p>Score: <?php echo $_SESSION['score'];?></p>
+    </div>
 
     <h4 id="question-text">What is the capital of <?php echo $values[0]['Name']?>?</h4>
     
     <div id="answers">
+      
       <?php
         $answerOrder = range(0,3);
         shuffle($answerOrder);

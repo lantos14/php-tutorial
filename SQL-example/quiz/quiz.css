@@ -16,6 +16,14 @@ html, body {
   align-items: center;
 }
 
+.counter {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  border-bottom: 2px solid black;
+  font-size: 14px;
+}
 #question-text {
   min-height: 50px;
   text-align: center;

@@ -12,6 +12,8 @@
   require_once "../db/database.php";
   require_once "../db/queries.php";
 
+  session_start();
+
   $quess = $_GET["quess"];
   $country = $_GET["country"];
 
@@ -25,14 +27,17 @@
   <div class="result-body">
 
   <?php
-  if ($values[0]['Capital'] === $quess) {
+  $correct = $values[0]['Capital'] === $quess;
+  if ($correct) {
     echo '<p id="result" style="color:green"> Right Answer </p>';
   } else {
     echo '<p id="result" style="color:red"> Wrong Answer </p>';
   }
-  ?>
+  
+  $href = "location.href='quiz.php?correct=".$correct."';";
 
-  <button onClick="location.href = 'quiz.php';">Next Question</button>
+  echo "<button onClick=".$href.">Next Question</button>"
+  ?>
 
   </div>    
 
