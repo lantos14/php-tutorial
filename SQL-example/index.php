@@ -9,8 +9,9 @@
 </head>
 <body>
 
+<h3>Dou you have what it takes to know all the countries and their capitals? Try out this funky little Quiz test!</h3>
 
-  <a href="quiz/quiz.php">Get Questions</a>
+  <button onClick='location.href="quiz/quiz.php"'>Get Questions</button>
 
 </body>
 </html>

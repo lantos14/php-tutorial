@@ -1,8 +1,36 @@
-th, td {
-  border: 1px solid black;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: top; 
+  background-repeat: no-repeat;
+  background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("https://bit.ly/1KWuhuj");
 }
 
-th {
-  background-color: black;
-  color: white;
+h3 {
+  min-height: 50px;
+  text-align: center;
+  padding: 20px 200px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+button {
+  font-size: 42px;
+  background-color: #004d7a;
+  color: whitesmoke;
+  padding: 3px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+button:hover {
+  filter: brightness(120%); 
+}
+
+button:active {
+  filter: brightness(90%);
 }

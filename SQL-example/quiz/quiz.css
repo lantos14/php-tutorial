@@ -3,7 +3,9 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(circle, #dee2e9, #bbcced, #9cb5f0, #7f9df1, #6684f0);
+  background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("https://bit.ly/1KWuhuj");
+  background-position: top; 
+  background-repeat: no-repeat;
 }
 
 #quiz-body {
